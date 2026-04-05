@@ -1,0 +1,18 @@
+#nullable enable
+
+namespace Oura
+{
+    public partial interface IWebhookSubscriptionRoutesClient
+    {
+        /// <summary>
+        /// List Webhook Subscriptions
+        /// </summary>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Oura.ApiException"></exception>
+        /// <remarks>
+        /// curl --location --request GET 'https://api.ouraring.com/v2/webhook/subscription' --header 'x-client-id: client-id' --header 'x-client-secret: client-secret'
+        /// </remarks>
+        global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Oura.WebhookSubscriptionModel>> ListWebhookSubscriptionsV2WebhookSubscriptionGetAsync(
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}
