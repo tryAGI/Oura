@@ -5,6 +5,25 @@ namespace Oura
 {
     public partial class SandboxRoutesClient
     {
+
+
+        private static readonly global::Oura.EndPointSecurityRequirement s_SandboxMultipleDailyActivityDocumentsV2SandboxUsercollectionDailyActivityGetSecurityRequirement0 =
+            new global::Oura.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Oura.EndPointAuthorizationRequirement[]
+                {                    new global::Oura.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Oura.EndPointSecurityRequirement[] s_SandboxMultipleDailyActivityDocumentsV2SandboxUsercollectionDailyActivityGetSecurityRequirements =
+            new global::Oura.EndPointSecurityRequirement[]
+            {                s_SandboxMultipleDailyActivityDocumentsV2SandboxUsercollectionDailyActivityGetSecurityRequirement0,
+            };
         partial void PrepareSandboxMultipleDailyActivityDocumentsV2SandboxUsercollectionDailyActivityGetArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.DateTime? startDate,
@@ -51,6 +70,12 @@ namespace Oura
                 endDate: ref endDate,
                 nextToken: ref nextToken);
 
+
+            var __authorizations = global::Oura.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_SandboxMultipleDailyActivityDocumentsV2SandboxUsercollectionDailyActivityGetSecurityRequirements,
+                operationName: "SandboxMultipleDailyActivityDocumentsV2SandboxUsercollectionDailyActivityGetAsync");
+
             var __pathBuilder = new global::Oura.PathBuilder(
                 path: "/v2/sandbox/usercollection/daily_activity",
                 baseUri: HttpClient.BaseAddress); 
@@ -58,7 +83,7 @@ namespace Oura
                 .AddOptionalParameter("start_date", startDate?.ToString())
                 .AddOptionalParameter("end_date", endDate?.ToString())
                 .AddOptionalParameter("next_token", nextToken) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -68,7 +93,7 @@ namespace Oura
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

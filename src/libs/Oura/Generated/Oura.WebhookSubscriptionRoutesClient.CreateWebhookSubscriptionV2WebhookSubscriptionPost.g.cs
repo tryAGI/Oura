@@ -5,6 +5,25 @@ namespace Oura
 {
     public partial class WebhookSubscriptionRoutesClient
     {
+
+
+        private static readonly global::Oura.EndPointSecurityRequirement s_CreateWebhookSubscriptionV2WebhookSubscriptionPostSecurityRequirement0 =
+            new global::Oura.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Oura.EndPointAuthorizationRequirement[]
+                {                    new global::Oura.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Oura.EndPointSecurityRequirement[] s_CreateWebhookSubscriptionV2WebhookSubscriptionPostSecurityRequirements =
+            new global::Oura.EndPointSecurityRequirement[]
+            {                s_CreateWebhookSubscriptionV2WebhookSubscriptionPostSecurityRequirement0,
+            };
         partial void PrepareCreateWebhookSubscriptionV2WebhookSubscriptionPostArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Oura.CreateWebhookSubscriptionRequest request);
@@ -48,9 +67,15 @@ namespace Oura
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Oura.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_CreateWebhookSubscriptionV2WebhookSubscriptionPostSecurityRequirements,
+                operationName: "CreateWebhookSubscriptionV2WebhookSubscriptionPostAsync");
+
             var __pathBuilder = new global::Oura.PathBuilder(
                 path: "/v2/webhook/subscription",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -60,7 +85,7 @@ namespace Oura
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

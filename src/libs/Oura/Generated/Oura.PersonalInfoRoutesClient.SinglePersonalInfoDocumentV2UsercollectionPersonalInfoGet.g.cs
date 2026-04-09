@@ -5,6 +5,25 @@ namespace Oura
 {
     public partial class PersonalInfoRoutesClient
     {
+
+
+        private static readonly global::Oura.EndPointSecurityRequirement s_SinglePersonalInfoDocumentV2UsercollectionPersonalInfoGetSecurityRequirement0 =
+            new global::Oura.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Oura.EndPointAuthorizationRequirement[]
+                {                    new global::Oura.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Oura.EndPointSecurityRequirement[] s_SinglePersonalInfoDocumentV2UsercollectionPersonalInfoGetSecurityRequirements =
+            new global::Oura.EndPointSecurityRequirement[]
+            {                s_SinglePersonalInfoDocumentV2UsercollectionPersonalInfoGetSecurityRequirement0,
+            };
         partial void PrepareSinglePersonalInfoDocumentV2UsercollectionPersonalInfoGetArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareSinglePersonalInfoDocumentV2UsercollectionPersonalInfoGetRequest(
@@ -36,9 +55,15 @@ namespace Oura
             PrepareSinglePersonalInfoDocumentV2UsercollectionPersonalInfoGetArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::Oura.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_SinglePersonalInfoDocumentV2UsercollectionPersonalInfoGetSecurityRequirements,
+                operationName: "SinglePersonalInfoDocumentV2UsercollectionPersonalInfoGetAsync");
+
             var __pathBuilder = new global::Oura.PathBuilder(
                 path: "/v2/usercollection/personal_info",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -48,7 +73,7 @@ namespace Oura
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,25 @@ namespace Oura
 {
     public partial class WebhookSubscriptionRoutesClient
     {
+
+
+        private static readonly global::Oura.EndPointSecurityRequirement s_DeleteWebhookSubscriptionV2WebhookSubscriptionIdDeleteSecurityRequirement0 =
+            new global::Oura.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Oura.EndPointAuthorizationRequirement[]
+                {                    new global::Oura.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Oura.EndPointSecurityRequirement[] s_DeleteWebhookSubscriptionV2WebhookSubscriptionIdDeleteSecurityRequirements =
+            new global::Oura.EndPointSecurityRequirement[]
+            {                s_DeleteWebhookSubscriptionV2WebhookSubscriptionIdDeleteSecurityRequirement0,
+            };
         partial void PrepareDeleteWebhookSubscriptionV2WebhookSubscriptionIdDeleteArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id);
@@ -35,9 +54,15 @@ namespace Oura
                 httpClient: HttpClient,
                 id: ref id);
 
+
+            var __authorizations = global::Oura.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeleteWebhookSubscriptionV2WebhookSubscriptionIdDeleteSecurityRequirements,
+                operationName: "DeleteWebhookSubscriptionV2WebhookSubscriptionIdDeleteAsync");
+
             var __pathBuilder = new global::Oura.PathBuilder(
                 path: $"/v2/webhook/subscription/{id}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -47,7 +72,7 @@ namespace Oura
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

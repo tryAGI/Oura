@@ -168,7 +168,6 @@ namespace Oura
     /// 2. Use webhooks for all ongoing data updates<br/>
     /// 3. Only fetch the specific data that has changed based on webhook notifications<br/>
     /// This approach minimizes API calls while ensuring your application always has the latest data.<br/>
-    ///         <br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
@@ -177,7 +176,7 @@ namespace Oura
         /// <summary>
         /// Oura API
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.ouraring.com";
+        public const string DefaultBaseUrl = "https://api.ouraring.com/";
 
         private bool _disposeHttpClient = true;
 

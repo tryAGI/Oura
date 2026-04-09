@@ -4,7 +4,7 @@
 namespace Oura
 {
     /// <summary>
-    /// The Daily SpO2 (blood oxygenation) routes include daily SpO2 average. Data will only be available for users with a Gen 3 Oura Ring<br/>
+    /// The Daily SpO2 (blood oxygenation) routes include daily SpO2 average. Data will only be available for users with a Gen 3 Oura Ring.<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
@@ -13,7 +13,7 @@ namespace Oura
         /// <summary>
         /// Oura API
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.ouraring.com";
+        public const string DefaultBaseUrl = "https://api.ouraring.com/";
 
         private bool _disposeHttpClient = true;
 

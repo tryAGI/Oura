@@ -5,7 +5,7 @@ namespace Oura
 {
     /// <summary>
     /// The Enhanced Tags data scope includes tags that Oura users enter within the Oura mobile app. Enhanced Tags can be added for any lifestyle choice, habit, mood change, or environmental factor an Oura user wants to monitor the effects of. Enhanced Tags also contain context on a tag's start and end time, whether a tag repeats daily, and comments.<br/>
-    /// [Learn more about how Oura users add Enhanced Tags](https://support.ouraring.com/hc/en-us/articles/360038676993-How-to-Use-Tags)<br/>
+    /// [Learn more about how Oura users add Enhanced Tags](https://support.ouraring.com/hc/en-us/articles/360038676993-How-to-Use-Tags).<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
@@ -14,7 +14,7 @@ namespace Oura
         /// <summary>
         /// Oura API
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.ouraring.com";
+        public const string DefaultBaseUrl = "https://api.ouraring.com/";
 
         private bool _disposeHttpClient = true;
 
