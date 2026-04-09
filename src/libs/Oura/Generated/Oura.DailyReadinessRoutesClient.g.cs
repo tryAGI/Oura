@@ -13,7 +13,7 @@ namespace Oura
         /// <summary>
         /// Oura API
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.ouraring.com";
+        public const string DefaultBaseUrl = "https://api.ouraring.com/";
 
         private bool _disposeHttpClient = true;
 

@@ -6,6 +6,7 @@ namespace Oura
     public sealed partial class OuraClient
     {
         /// <inheritdoc cref="OuraClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Oura.EndPointAuthorization}?, bool)"/>
+
         public OuraClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

@@ -5,6 +5,25 @@ namespace Oura
 {
     public partial class SandboxRoutesClient
     {
+
+
+        private static readonly global::Oura.EndPointSecurityRequirement s_SandboxSingleSleepTimeDocumentV2SandboxUsercollectionSleepTimeDocumentIdGetSecurityRequirement0 =
+            new global::Oura.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Oura.EndPointAuthorizationRequirement[]
+                {                    new global::Oura.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Oura.EndPointSecurityRequirement[] s_SandboxSingleSleepTimeDocumentV2SandboxUsercollectionSleepTimeDocumentIdGetSecurityRequirements =
+            new global::Oura.EndPointSecurityRequirement[]
+            {                s_SandboxSingleSleepTimeDocumentV2SandboxUsercollectionSleepTimeDocumentIdGetSecurityRequirement0,
+            };
         partial void PrepareSandboxSingleSleepTimeDocumentV2SandboxUsercollectionSleepTimeDocumentIdGetArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string documentId);
@@ -41,9 +60,15 @@ namespace Oura
                 httpClient: HttpClient,
                 documentId: ref documentId);
 
+
+            var __authorizations = global::Oura.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_SandboxSingleSleepTimeDocumentV2SandboxUsercollectionSleepTimeDocumentIdGetSecurityRequirements,
+                operationName: "SandboxSingleSleepTimeDocumentV2SandboxUsercollectionSleepTimeDocumentIdGetAsync");
+
             var __pathBuilder = new global::Oura.PathBuilder(
                 path: $"/v2/sandbox/usercollection/sleep_time/{documentId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -53,7 +78,7 @@ namespace Oura
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

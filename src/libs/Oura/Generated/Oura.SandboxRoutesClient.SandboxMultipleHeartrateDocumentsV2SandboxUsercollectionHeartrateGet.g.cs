@@ -5,6 +5,25 @@ namespace Oura
 {
     public partial class SandboxRoutesClient
     {
+
+
+        private static readonly global::Oura.EndPointSecurityRequirement s_SandboxMultipleHeartrateDocumentsV2SandboxUsercollectionHeartrateGetSecurityRequirement0 =
+            new global::Oura.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Oura.EndPointAuthorizationRequirement[]
+                {                    new global::Oura.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Oura.EndPointSecurityRequirement[] s_SandboxMultipleHeartrateDocumentsV2SandboxUsercollectionHeartrateGetSecurityRequirements =
+            new global::Oura.EndPointSecurityRequirement[]
+            {                s_SandboxMultipleHeartrateDocumentsV2SandboxUsercollectionHeartrateGetSecurityRequirement0,
+            };
         partial void PrepareSandboxMultipleHeartrateDocumentsV2SandboxUsercollectionHeartrateGetArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.DateTime? startDatetime,
@@ -52,6 +71,12 @@ namespace Oura
                 endDatetime: ref endDatetime,
                 nextToken: ref nextToken);
 
+
+            var __authorizations = global::Oura.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_SandboxMultipleHeartrateDocumentsV2SandboxUsercollectionHeartrateGetSecurityRequirements,
+                operationName: "SandboxMultipleHeartrateDocumentsV2SandboxUsercollectionHeartrateGetAsync");
+
             var __pathBuilder = new global::Oura.PathBuilder(
                 path: "/v2/sandbox/usercollection/heartrate",
                 baseUri: HttpClient.BaseAddress); 
@@ -59,7 +84,7 @@ namespace Oura
                 .AddOptionalParameter("start_datetime", startDatetime?.ToString("yyyy-MM-ddTHH:mm:ssZ"))
                 .AddOptionalParameter("end_datetime", endDatetime?.ToString("yyyy-MM-ddTHH:mm:ssZ"))
                 .AddOptionalParameter("next_token", nextToken) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -69,7 +94,7 @@ namespace Oura
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
