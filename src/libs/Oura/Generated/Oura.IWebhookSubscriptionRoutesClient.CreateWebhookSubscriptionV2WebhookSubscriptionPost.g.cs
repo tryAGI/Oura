@@ -8,6 +8,7 @@ namespace Oura
         /// Create Webhook Subscription
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
@@ -21,6 +22,7 @@ namespace Oura
         global::System.Threading.Tasks.Task<global::Oura.WebhookSubscriptionModel> CreateWebhookSubscriptionV2WebhookSubscriptionPostAsync(
 
             global::Oura.CreateWebhookSubscriptionRequest request,
+            global::Oura.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create Webhook Subscription
@@ -29,6 +31,7 @@ namespace Oura
         /// <param name="verificationToken"></param>
         /// <param name="eventType"></param>
         /// <param name="dataType"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Oura.WebhookSubscriptionModel> CreateWebhookSubscriptionV2WebhookSubscriptionPostAsync(
@@ -36,6 +39,7 @@ namespace Oura
             string verificationToken,
             global::Oura.WebhookOperation eventType,
             global::Oura.ExtApiV2DataType dataType,
+            global::Oura.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

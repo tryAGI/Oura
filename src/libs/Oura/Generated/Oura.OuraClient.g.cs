@@ -78,6 +78,9 @@ namespace Oura
 #if DEBUG
             = true;
 #endif
+
+        /// <inheritdoc/>
+        public global::Oura.AutoSDKClientOptions Options { get; }
         /// <summary>
         /// 
         /// </summary>
@@ -87,7 +90,7 @@ namespace Oura
         /// <summary>
         /// The Daily Activity scope includes daily activity summary values and detailed activity levels. Activity levels are expressed in [metabolic equivalent of task minutes](https://en.wikipedia.org/wiki/Metabolic_equivalent) (MET mins). Oura tracks activity based on the movement.
         /// </summary>
-        public DailyActivityRoutesClient DailyActivityRoutes => new DailyActivityRoutesClient(HttpClient, authorizations: Authorizations)
+        public DailyActivityRoutesClient DailyActivityRoutes => new DailyActivityRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -96,7 +99,7 @@ namespace Oura
         /// <summary>
         /// Cardiovascular Age is an estimate of the health of your cardiovascular system in relation to your actual age. See more details [here](https://support.ouraring.com/hc/en-us/articles/28451491040019-Cardiovascular-Age).
         /// </summary>
-        public DailyCardiovascularAgeRoutesClient DailyCardiovascularAgeRoutes => new DailyCardiovascularAgeRoutesClient(HttpClient, authorizations: Authorizations)
+        public DailyCardiovascularAgeRoutesClient DailyCardiovascularAgeRoutes => new DailyCardiovascularAgeRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -105,7 +108,7 @@ namespace Oura
         /// <summary>
         /// Readiness tells how ready you are for the day.
         /// </summary>
-        public DailyReadinessRoutesClient DailyReadinessRoutes => new DailyReadinessRoutesClient(HttpClient, authorizations: Authorizations)
+        public DailyReadinessRoutesClient DailyReadinessRoutes => new DailyReadinessRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -114,7 +117,7 @@ namespace Oura
         /// <summary>
         /// Resilience is an estimate of your ability to withstand physiological stress and recover from it over time.
         /// </summary>
-        public DailyResilienceRoutesClient DailyResilienceRoutes => new DailyResilienceRoutesClient(HttpClient, authorizations: Authorizations)
+        public DailyResilienceRoutesClient DailyResilienceRoutes => new DailyResilienceRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -123,7 +126,7 @@ namespace Oura
         /// <summary>
         /// Sleep period is a nearly continuous, longish period of time spent lying down in bed.
         /// </summary>
-        public DailySleepRoutesClient DailySleepRoutes => new DailySleepRoutesClient(HttpClient, authorizations: Authorizations)
+        public DailySleepRoutesClient DailySleepRoutes => new DailySleepRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -132,7 +135,7 @@ namespace Oura
         /// <summary>
         /// The Daily SpO2 (blood oxygenation) routes include daily SpO2 average. Data will only be available for users with a Gen 3 Oura Ring.
         /// </summary>
-        public DailySpo2RoutesClient DailySpo2Routes => new DailySpo2RoutesClient(HttpClient, authorizations: Authorizations)
+        public DailySpo2RoutesClient DailySpo2Routes => new DailySpo2RoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -141,7 +144,7 @@ namespace Oura
         /// <summary>
         /// The daily stress route includes a summary of the number of minutes the user spends in high stress and high recovery each day. This is a great way to see how your stress and recovery are trending over time. Stress and recovery are mutally exclusive. E.g. one can only be stressed or recovered at any given moement - and cannot be stressed and recovered at the same time.
         /// </summary>
-        public DailyStressRoutesClient DailyStressRoutes => new DailyStressRoutesClient(HttpClient, authorizations: Authorizations)
+        public DailyStressRoutesClient DailyStressRoutes => new DailyStressRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -151,7 +154,7 @@ namespace Oura
         /// The Enhanced Tags data scope includes tags that Oura users enter within the Oura mobile app. Enhanced Tags can be added for any lifestyle choice, habit, mood change, or environmental factor an Oura user wants to monitor the effects of. Enhanced Tags also contain context on a tag's start and end time, whether a tag repeats daily, and comments.<br/>
         /// [Learn more about how Oura users add Enhanced Tags](https://support.ouraring.com/hc/en-us/articles/360038676993-How-to-Use-Tags).
         /// </summary>
-        public EnhancedTagRoutesClient EnhancedTagRoutes => new EnhancedTagRoutesClient(HttpClient, authorizations: Authorizations)
+        public EnhancedTagRoutesClient EnhancedTagRoutes => new EnhancedTagRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -160,7 +163,7 @@ namespace Oura
         /// <summary>
         /// The Heart Rate data scope includes time-series heart rate data throughout the day and night. Heart rate is provided at 5-minute increments. For heart rate data recorded from a Session, see Sessions endpoint.
         /// </summary>
-        public HeartRateRoutesClient HeartRateRoutes => new HeartRateRoutesClient(HttpClient, authorizations: Authorizations)
+        public HeartRateRoutesClient HeartRateRoutes => new HeartRateRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -169,7 +172,7 @@ namespace Oura
         /// <summary>
         /// The Personal Info scope includes personal information (e.g. age, email, weight, and height) about the user. You can access the id on the personal_info route with any access token (no scopes are required).
         /// </summary>
-        public PersonalInfoRoutesClient PersonalInfoRoutes => new PersonalInfoRoutesClient(HttpClient, authorizations: Authorizations)
+        public PersonalInfoRoutesClient PersonalInfoRoutes => new PersonalInfoRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -178,7 +181,7 @@ namespace Oura
         /// <summary>
         /// The Rest Mode scope includes information about rest mode periods. This includes the start, end time and detaials of the rest mode period.
         /// </summary>
-        public RestModePeriodRoutesClient RestModePeriodRoutes => new RestModePeriodRoutesClient(HttpClient, authorizations: Authorizations)
+        public RestModePeriodRoutesClient RestModePeriodRoutes => new RestModePeriodRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -187,7 +190,7 @@ namespace Oura
         /// <summary>
         /// The Ring Configuration scope includes information about the user's ring(s). This includes the model, size, color, etc.
         /// </summary>
-        public RingConfigurationRoutesClient RingConfigurationRoutes => new RingConfigurationRoutesClient(HttpClient, authorizations: Authorizations)
+        public RingConfigurationRoutesClient RingConfigurationRoutes => new RingConfigurationRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -196,7 +199,7 @@ namespace Oura
         /// <summary>
         /// Fake user data that you can access without an Oura account. There is a corresponding sandbox endpoint to each available data type. This is useful for testing and development purposes. The data is not real and should not be used for any production purposes. The data is generated by Oura and is not based on any real user data. The data is not updated in real-time and is not guaranteed to be accurate. The rate limit for the sandbox endpoints is shared with your rate limit on other data endpoints.
         /// </summary>
-        public SandboxRoutesClient SandboxRoutes => new SandboxRoutesClient(HttpClient, authorizations: Authorizations)
+        public SandboxRoutesClient SandboxRoutes => new SandboxRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -205,7 +208,7 @@ namespace Oura
         /// <summary>
         /// The Sessions data scope provides information on how users engage with guided and unguided sessions in the Oura app, including the user's biometric trends during the sessions.
         /// </summary>
-        public SessionRoutesClient SessionRoutes => new SessionRoutesClient(HttpClient, authorizations: Authorizations)
+        public SessionRoutesClient SessionRoutes => new SessionRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -214,7 +217,7 @@ namespace Oura
         /// <summary>
         /// Returns Oura Sleep data for the specified Oura user within a given timeframe. A user can have multiple sleep periods per day.
         /// </summary>
-        public SleepRoutesClient SleepRoutes => new SleepRoutesClient(HttpClient, authorizations: Authorizations)
+        public SleepRoutesClient SleepRoutes => new SleepRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -223,7 +226,7 @@ namespace Oura
         /// <summary>
         /// Recommendations for the optimal bedtime window that is calculated based on sleep data.
         /// </summary>
-        public SleepTimeRoutesClient SleepTimeRoutes => new SleepTimeRoutesClient(HttpClient, authorizations: Authorizations)
+        public SleepTimeRoutesClient SleepTimeRoutes => new SleepTimeRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -234,7 +237,7 @@ namespace Oura
         /// ~~The Tags data scope includes tags that Oura users enter within the Oura mobile app. Tags are a growing list of activities, environment factors, symptoms, emotions, and other aspects that provide broader context into what's happening with users beyond the objective data generated by the Oura Ring.~~<br/>
         /// ~~[More information on tag translations](https://cloud.ouraring.com/edu/tag-translations)~~.
         /// </summary>
-        public TagRoutesClient TagRoutes => new TagRoutesClient(HttpClient, authorizations: Authorizations)
+        public TagRoutesClient TagRoutes => new TagRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -243,7 +246,7 @@ namespace Oura
         /// <summary>
         /// VO2 Max is a measure of the maximum volume of oxygen that an individual can use during intense exercise. See more details [here](https://support.ouraring.com/hc/en-us/articles/28336620578835-Cardio-Capacity-VO2-Max).
         /// </summary>
-        public Vo2MaxRoutesClient Vo2MaxRoutes => new Vo2MaxRoutesClient(HttpClient, authorizations: Authorizations)
+        public Vo2MaxRoutesClient Vo2MaxRoutes => new Vo2MaxRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -415,7 +418,7 @@ namespace Oura
         /// 3. Only fetch the specific data that has changed based on webhook notifications<br/>
         /// This approach minimizes API calls while ensuring your application always has the latest data.
         /// </summary>
-        public WebhookSubscriptionRoutesClient WebhookSubscriptionRoutes => new WebhookSubscriptionRoutesClient(HttpClient, authorizations: Authorizations)
+        public WebhookSubscriptionRoutesClient WebhookSubscriptionRoutes => new WebhookSubscriptionRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -424,7 +427,7 @@ namespace Oura
         /// <summary>
         /// The Workout data scope includes information about user workouts. This is a diverse, growing list of workouts that help inform how the user is training and exercising.
         /// </summary>
-        public WorkoutRoutesClient WorkoutRoutes => new WorkoutRoutesClient(HttpClient, authorizations: Authorizations)
+        public WorkoutRoutesClient WorkoutRoutes => new WorkoutRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -443,11 +446,37 @@ namespace Oura
             global::System.Net.Http.HttpClient? httpClient = null,
             global::System.Uri? baseUri = null,
             global::System.Collections.Generic.List<global::Oura.EndPointAuthorization>? authorizations = null,
+            bool disposeHttpClient = true) : this(
+                httpClient,
+                baseUri,
+                authorizations,
+                options: null,
+                disposeHttpClient: disposeHttpClient)
+        {
+        }
+
+        /// <summary>
+        /// Creates a new instance of the OuraClient.
+        /// If no httpClient is provided, a new one will be created.
+        /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
+        /// </summary>
+        /// <param name="httpClient">The HttpClient instance. If not provided, a new one will be created.</param>
+        /// <param name="baseUri">The base URL for the API. If not provided, the default baseUri from OpenAPI spec will be used.</param>
+        /// <param name="authorizations">The authorizations to use for the requests.</param>
+        /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
+        /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
+        public OuraClient(
+            global::System.Net.Http.HttpClient? httpClient = null,
+            global::System.Uri? baseUri = null,
+            global::System.Collections.Generic.List<global::Oura.EndPointAuthorization>? authorizations = null,
+            global::Oura.AutoSDKClientOptions? options = null,
             bool disposeHttpClient = true)
         {
+
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
             HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Oura.EndPointAuthorization>();
+            Options = options ?? new global::Oura.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
 
             Initialized(HttpClient);

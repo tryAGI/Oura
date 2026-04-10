@@ -8,6 +8,7 @@ namespace Oura
         /// Single Session Document
         /// </summary>
         /// <param name="documentId"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
@@ -16,6 +17,7 @@ namespace Oura
         /// </remarks>
         global::System.Threading.Tasks.Task<global::Oura.SessionModel> SingleSessionDocumentV2UsercollectionSessionDocumentIdGetAsync(
             string documentId,
+            global::Oura.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

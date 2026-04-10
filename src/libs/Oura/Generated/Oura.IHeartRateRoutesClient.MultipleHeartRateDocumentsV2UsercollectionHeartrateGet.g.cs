@@ -10,6 +10,7 @@ namespace Oura
         /// <param name="startDatetime"></param>
         /// <param name="endDatetime"></param>
         /// <param name="nextToken"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
@@ -21,6 +22,7 @@ namespace Oura
             global::System.DateTime? startDatetime = default,
             global::System.DateTime? endDatetime = default,
             string? nextToken = default,
+            global::Oura.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
