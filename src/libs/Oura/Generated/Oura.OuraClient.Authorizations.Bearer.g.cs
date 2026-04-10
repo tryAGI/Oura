@@ -25,6 +25,7 @@ namespace Oura
             Authorizations.Add(new global::Oura.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "HttpBearer",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,

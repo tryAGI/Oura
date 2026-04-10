@@ -8,6 +8,7 @@ namespace Oura
         /// Delete Webhook Subscription
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
@@ -15,6 +16,7 @@ namespace Oura
         /// </remarks>
         global::System.Threading.Tasks.Task DeleteWebhookSubscriptionV2WebhookSubscriptionIdDeleteAsync(
             string id,
+            global::Oura.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

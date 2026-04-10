@@ -9,6 +9,7 @@ namespace Oura
         /// </summary>
         /// <param name="id"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
@@ -23,6 +24,7 @@ namespace Oura
             string id,
 
             global::Oura.UpdateWebhookSubscriptionRequest request,
+            global::Oura.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update Webhook Subscription
@@ -32,6 +34,7 @@ namespace Oura
         /// <param name="callbackUrl"></param>
         /// <param name="eventType"></param>
         /// <param name="dataType"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Oura.WebhookSubscriptionModel> UpdateWebhookSubscriptionV2WebhookSubscriptionIdPutAsync(
@@ -40,6 +43,7 @@ namespace Oura
             string? callbackUrl = default,
             global::Oura.WebhookOperation? eventType = default,
             global::Oura.ExtApiV2DataType? dataType = default,
+            global::Oura.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
