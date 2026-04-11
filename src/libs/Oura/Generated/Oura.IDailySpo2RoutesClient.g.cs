@@ -4,7 +4,7 @@
 namespace Oura
 {
     /// <summary>
-    /// The Daily SpO2 (blood oxygenation) routes include daily SpO2 average. Data will only be available for users with a Gen 3 Oura Ring.<br/>
+    /// The Daily SpO2 (blood oxygenation) routes include daily SpO2 average. Data will only be available for users with a Gen 3 Oura Ring<br/>
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
@@ -33,11 +33,11 @@ namespace Oura
         /// ensuring <see cref="ApiException.ResponseBody"/> is populated.
         /// </summary>
         public bool ReadResponseAsString { get; set; }
-
         /// <summary>
         /// Client-wide request defaults such as headers, query parameters, retries, and timeout.
         /// </summary>
         public global::Oura.AutoSDKClientOptions Options { get; }
+
 
         /// <summary>
         /// 
