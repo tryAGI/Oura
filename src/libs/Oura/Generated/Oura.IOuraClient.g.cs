@@ -44,5 +44,115 @@ namespace Oura
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        public DailyActivityRoutesClient DailyActivityRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DailyCardiovascularAgeRoutesClient DailyCardiovascularAgeRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DailyReadinessRoutesClient DailyReadinessRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DailyResilienceRoutesClient DailyResilienceRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DailySleepRoutesClient DailySleepRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DailySpo2RoutesClient DailySpo2Routes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DailyStressRoutesClient DailyStressRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public EnhancedTagRoutesClient EnhancedTagRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public HeartRateRoutesClient HeartRateRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public InterbeatIntervalRoutesClient InterbeatIntervalRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public PersonalInfoRoutesClient PersonalInfoRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public RestModePeriodRoutesClient RestModePeriodRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public RingBatteryLevelRoutesClient RingBatteryLevelRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public RingConfigurationRoutesClient RingConfigurationRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SandboxRoutesClient SandboxRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SessionRoutesClient SessionRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SleepRoutesClient SleepRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SleepTimeRoutesClient SleepTimeRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public TagRoutesClient TagRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Vo2MaxRoutesClient Vo2MaxRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public WebhookSubscriptionRoutesClient WebhookSubscriptionRoutes { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public WorkoutRoutesClient WorkoutRoutes { get; }
+
     }
 }

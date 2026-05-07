@@ -29,14 +29,15 @@ public static class OuraClientTools
                     startDate: startDate is not null ? DateTime.Parse(startDate, CultureInfo.InvariantCulture) : null,
                     endDate: endDate is not null ? DateTime.Parse(endDate, CultureInfo.InvariantCulture) : null,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
+                var data = response.Value1?.Data ?? [];
 
                 return JsonSerializer.Serialize(new
                 {
-                    count = response.Data.Count,
-                    data = response.Data.Select(d => new
+                    count = data.Count,
+                    data = data.Select(d => new
                     {
                         id = d.Id,
-                        day = d.Day.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
+                        day = d.Day,
                         score = d.Score,
                         timestamp = d.Timestamp,
                     }),
@@ -63,14 +64,15 @@ public static class OuraClientTools
                     startDate: startDate is not null ? DateTime.Parse(startDate, CultureInfo.InvariantCulture) : null,
                     endDate: endDate is not null ? DateTime.Parse(endDate, CultureInfo.InvariantCulture) : null,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
+                var data = response.Value1?.Data ?? [];
 
                 return JsonSerializer.Serialize(new
                 {
-                    count = response.Data.Count,
-                    data = response.Data.Select(d => new
+                    count = data.Count,
+                    data = data.Select(d => new
                     {
                         id = d.Id,
-                        day = d.Day.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
+                        day = d.Day,
                         score = d.Score,
                         steps = d.Steps,
                         active_calories = d.ActiveCalories,
@@ -105,14 +107,15 @@ public static class OuraClientTools
                     startDate: startDate is not null ? DateTime.Parse(startDate, CultureInfo.InvariantCulture) : null,
                     endDate: endDate is not null ? DateTime.Parse(endDate, CultureInfo.InvariantCulture) : null,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
+                var data = response.Value1?.Data ?? [];
 
                 return JsonSerializer.Serialize(new
                 {
-                    count = response.Data.Count,
-                    data = response.Data.Select(d => new
+                    count = data.Count,
+                    data = data.Select(d => new
                     {
                         id = d.Id,
-                        day = d.Day.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
+                        day = d.Day,
                         score = d.Score,
                         temperature_deviation = d.TemperatureDeviation,
                         temperature_trend_deviation = d.TemperatureTrendDeviation,
@@ -137,15 +140,16 @@ public static class OuraClientTools
                    [Description("End datetime in ISO 8601 format, e.g. 2024-01-02T00:00:00Z (optional)")] string? endDatetime,
                    CancellationToken cancellationToken) =>
             {
-                var response = await client.HeartRateRoutes.MultipleHeartRateDocumentsV2UsercollectionHeartrateGetAsync(
+                var response = await client.HeartRateRoutes.MultipleHeartrateDocumentsV2UsercollectionHeartrateGetAsync(
                     startDatetime: startDatetime is not null ? DateTime.Parse(startDatetime, CultureInfo.InvariantCulture) : null,
                     endDatetime: endDatetime is not null ? DateTime.Parse(endDatetime, CultureInfo.InvariantCulture) : null,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
+                var data = response.Value1?.Data ?? [];
 
                 return JsonSerializer.Serialize(new
                 {
-                    count = response.Data.Count,
-                    data = response.Data.Select(d => new
+                    count = data.Count,
+                    data = data.Select(d => new
                     {
                         bpm = d.Bpm,
                         source = d.Source.ToString(),
@@ -174,14 +178,15 @@ public static class OuraClientTools
                     startDate: startDate is not null ? DateTime.Parse(startDate, CultureInfo.InvariantCulture) : null,
                     endDate: endDate is not null ? DateTime.Parse(endDate, CultureInfo.InvariantCulture) : null,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
+                var data = response.Value1?.Data ?? [];
 
                 return JsonSerializer.Serialize(new
                 {
-                    count = response.Data.Count,
-                    data = response.Data.Select(d => new
+                    count = data.Count,
+                    data = data.Select(d => new
                     {
                         id = d.Id,
-                        day = d.Day.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
+                        day = d.Day,
                         type = d.Type.ToString(),
                         bedtime_start = d.BedtimeStart,
                         bedtime_end = d.BedtimeEnd,
