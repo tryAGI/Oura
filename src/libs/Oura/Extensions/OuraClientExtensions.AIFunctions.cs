@@ -2,7 +2,6 @@
 
 using System.ComponentModel;
 using System.Globalization;
-using System.Text.Json;
 using Microsoft.Extensions.AI;
 
 namespace Oura;
@@ -31,7 +30,7 @@ public static class OuraClientTools
                     cancellationToken: cancellationToken).ConfigureAwait(false);
                 var data = response.Value1?.Data ?? [];
 
-                return JsonSerializer.Serialize(new
+                return new
                 {
                     count = data.Count,
                     data = data.Select(d => new
@@ -41,7 +40,7 @@ public static class OuraClientTools
                         score = d.Score,
                         timestamp = d.Timestamp,
                     }),
-                });
+                };
             },
             name: "Oura_GetDailySleep",
             description: "Get daily sleep scores from Oura Ring for a date range. Returns sleep score and contributor details for each day.");
@@ -66,7 +65,7 @@ public static class OuraClientTools
                     cancellationToken: cancellationToken).ConfigureAwait(false);
                 var data = response.Value1?.Data ?? [];
 
-                return JsonSerializer.Serialize(new
+                return new
                 {
                     count = data.Count,
                     data = data.Select(d => new
@@ -84,7 +83,7 @@ public static class OuraClientTools
                         sedentary_time = d.SedentaryTime,
                         resting_time = d.RestingTime,
                     }),
-                });
+                };
             },
             name: "Oura_GetDailyActivity",
             description: "Get daily activity metrics from Oura Ring including steps, calories, activity time, and MET minutes for a date range.");
@@ -109,7 +108,7 @@ public static class OuraClientTools
                     cancellationToken: cancellationToken).ConfigureAwait(false);
                 var data = response.Value1?.Data ?? [];
 
-                return JsonSerializer.Serialize(new
+                return new
                 {
                     count = data.Count,
                     data = data.Select(d => new
@@ -121,7 +120,7 @@ public static class OuraClientTools
                         temperature_trend_deviation = d.TemperatureTrendDeviation,
                         timestamp = d.Timestamp,
                     }),
-                });
+                };
             },
             name: "Oura_GetDailyReadiness",
             description: "Get daily readiness scores from Oura Ring for a date range. Returns how ready the user is for the day based on sleep, recovery, and other factors.");
@@ -146,7 +145,7 @@ public static class OuraClientTools
                     cancellationToken: cancellationToken).ConfigureAwait(false);
                 var data = response.Value1?.Data ?? [];
 
-                return JsonSerializer.Serialize(new
+                return new
                 {
                     count = data.Count,
                     data = data.Select(d => new
@@ -155,7 +154,7 @@ public static class OuraClientTools
                         source = d.Source.ToString(),
                         timestamp = d.Timestamp,
                     }),
-                });
+                };
             },
             name: "Oura_GetHeartRate",
             description: "Get heart rate time-series data from Oura Ring. Returns BPM readings at 5-minute intervals with source (awake, rest, sleep, etc.).");
@@ -180,7 +179,7 @@ public static class OuraClientTools
                     cancellationToken: cancellationToken).ConfigureAwait(false);
                 var data = response.Value1?.Data ?? [];
 
-                return JsonSerializer.Serialize(new
+                return new
                 {
                     count = data.Count,
                     data = data.Select(d => new
@@ -204,7 +203,7 @@ public static class OuraClientTools
                         latency = d.Latency,
                         restless_periods = d.RestlessPeriods,
                     }),
-                });
+                };
             },
             name: "Oura_GetSleepData",
             description: "Get detailed sleep period data from Oura Ring including sleep stages (deep, light, REM), HRV, heart rate, breathing rate, and efficiency for a date range.");
