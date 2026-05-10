@@ -77,5 +77,6 @@ namespace Oura
         public PublicHeartRateRow()
         {
         }
+
     }
 }

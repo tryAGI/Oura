@@ -99,5 +99,6 @@ namespace Oura
         public PublicSleepTime()
         {
         }
+
     }
 }

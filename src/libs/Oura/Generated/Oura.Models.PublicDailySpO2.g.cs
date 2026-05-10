@@ -86,5 +86,6 @@ namespace Oura
         public PublicDailySpO2()
         {
         }
+
     }
 }

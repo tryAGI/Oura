@@ -444,5 +444,6 @@ namespace Oura
         public PublicModifiedSleepModel()
         {
         }
+
     }
 }

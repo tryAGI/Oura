@@ -109,5 +109,6 @@ namespace Oura
         public PublicRestModePeriod()
         {
         }
+
     }
 }

@@ -107,5 +107,6 @@ namespace Oura
         public PublicSleepContributors()
         {
         }
+
     }
 }
