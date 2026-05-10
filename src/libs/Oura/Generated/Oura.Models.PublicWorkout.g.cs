@@ -155,5 +155,6 @@ namespace Oura
         public PublicWorkout()
         {
         }
+
     }
 }

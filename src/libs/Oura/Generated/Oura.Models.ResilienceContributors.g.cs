@@ -66,5 +66,6 @@ namespace Oura
         public ResilienceContributors()
         {
         }
+
     }
 }

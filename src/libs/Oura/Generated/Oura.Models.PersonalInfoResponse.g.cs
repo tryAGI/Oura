@@ -85,5 +85,6 @@ namespace Oura
         public PersonalInfoResponse()
         {
         }
+
     }
 }

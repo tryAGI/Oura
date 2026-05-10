@@ -75,5 +75,6 @@ namespace Oura
         public PublicDailyCardiovascularAge()
         {
         }
+
     }
 }

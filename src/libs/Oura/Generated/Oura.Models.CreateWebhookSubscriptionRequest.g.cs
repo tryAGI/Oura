@@ -72,5 +72,6 @@ namespace Oura
         public CreateWebhookSubscriptionRequest()
         {
         }
+
     }
 }

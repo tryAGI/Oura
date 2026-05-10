@@ -49,5 +49,6 @@ namespace Oura
         public MultiDocumentResponsePublicDailySpO2()
         {
         }
+
     }
 }

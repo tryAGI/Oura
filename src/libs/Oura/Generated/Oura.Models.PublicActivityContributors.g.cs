@@ -96,5 +96,6 @@ namespace Oura
         public PublicActivityContributors()
         {
         }
+
     }
 }

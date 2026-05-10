@@ -123,5 +123,6 @@ namespace Oura
         public PublicRingConfiguration()
         {
         }
+
     }
 }
