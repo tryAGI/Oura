@@ -82,5 +82,6 @@ namespace Oura
         public WebhookSubscriptionModel()
         {
         }
+
     }
 }

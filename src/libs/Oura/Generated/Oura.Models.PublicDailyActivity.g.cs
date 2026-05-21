@@ -362,5 +362,6 @@ namespace Oura
         public PublicDailyActivity()
         {
         }
+
     }
 }

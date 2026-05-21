@@ -86,5 +86,6 @@ namespace Oura
         public PublicVO2Max()
         {
         }
+
     }
 }

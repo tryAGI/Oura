@@ -42,5 +42,6 @@ namespace Oura
         public PublicSpo2AggregatedValues()
         {
         }
+
     }
 }

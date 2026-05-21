@@ -69,5 +69,6 @@ namespace Oura
         public UpdateWebhookSubscriptionRequest()
         {
         }
+
     }
 }
