@@ -1,6 +1,6 @@
 dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
-curl -o openapi.json https://cloud.ouraring.com/v2/static/json/openapi-1.29.json
+curl -o openapi.json https://cloud.ouraring.com/v2/static/json/openapi-1.30.json
 
 # Convert OpenAPI 3.1.0 to 3.0.3 for AutoSDK compatibility + fix server URL
 python3 -c "
