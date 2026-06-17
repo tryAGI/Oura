@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
 install_autosdk_cli() {
   dotnet tool update --global autosdk.cli --prerelease >/dev/null 2>&1 || \
     dotnet tool install --global autosdk.cli --prerelease
@@ -11,8 +14,14 @@ fetch_spec() {
 }
 
 install_autosdk_cli
+
+spec_tmp="$(mktemp openapi.json.XXXXXX)"
+trap 'rm -f "$spec_tmp"' EXIT
+fetch_spec -o "$spec_tmp" https://cloud.ouraring.com/v2/static/json/openapi-1.30.json
+mv "$spec_tmp" openapi.json
+trap - EXIT
+
 rm -rf Generated
-fetch_spec -o openapi.json https://cloud.ouraring.com/v2/static/json/openapi-1.30.json
 
 # Convert OpenAPI 3.1.0 to 3.0.3 for AutoSDK compatibility + fix server URL
 python3 -c "
