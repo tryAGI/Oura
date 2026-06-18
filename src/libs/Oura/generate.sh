@@ -17,7 +17,7 @@ install_autosdk_cli
 
 spec_tmp="$(mktemp openapi.json.XXXXXX)"
 trap 'rm -f "$spec_tmp"' EXIT
-fetch_spec -o "$spec_tmp" https://cloud.ouraring.com/v2/static/json/openapi-1.30.json
+fetch_spec -o "$spec_tmp" https://cloud.ouraring.com/v2/static/json/openapi-1.34.json
 mv "$spec_tmp" openapi.json
 trap - EXIT
 

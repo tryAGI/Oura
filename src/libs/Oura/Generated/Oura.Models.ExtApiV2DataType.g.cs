@@ -1,0 +1,141 @@
+
+#nullable enable
+
+namespace Oura
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public enum ExtApiV2DataType
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        DailyActivity,
+        /// <summary>
+        /// 
+        /// </summary>
+        DailyCardiovascularAge,
+        /// <summary>
+        /// 
+        /// </summary>
+        DailyReadiness,
+        /// <summary>
+        /// 
+        /// </summary>
+        DailyResilience,
+        /// <summary>
+        /// 
+        /// </summary>
+        DailySleep,
+        /// <summary>
+        /// 
+        /// </summary>
+        DailySpo2,
+        /// <summary>
+        /// 
+        /// </summary>
+        DailyStress,
+        /// <summary>
+        /// 
+        /// </summary>
+        EnhancedTag,
+        /// <summary>
+        /// 
+        /// </summary>
+        Meal,
+        /// <summary>
+        /// 
+        /// </summary>
+        RestModePeriod,
+        /// <summary>
+        /// 
+        /// </summary>
+        RingConfiguration,
+        /// <summary>
+        /// 
+        /// </summary>
+        Session,
+        /// <summary>
+        /// 
+        /// </summary>
+        Sleep,
+        /// <summary>
+        /// 
+        /// </summary>
+        SleepTime,
+        /// <summary>
+        /// 
+        /// </summary>
+        Tag,
+        /// <summary>
+        /// 
+        /// </summary>
+        Vo2Max,
+        /// <summary>
+        /// 
+        /// </summary>
+        Workout,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class ExtApiV2DataTypeExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this ExtApiV2DataType value)
+        {
+            return value switch
+            {
+                ExtApiV2DataType.DailyActivity => "daily_activity",
+                ExtApiV2DataType.DailyCardiovascularAge => "daily_cardiovascular_age",
+                ExtApiV2DataType.DailyReadiness => "daily_readiness",
+                ExtApiV2DataType.DailyResilience => "daily_resilience",
+                ExtApiV2DataType.DailySleep => "daily_sleep",
+                ExtApiV2DataType.DailySpo2 => "daily_spo2",
+                ExtApiV2DataType.DailyStress => "daily_stress",
+                ExtApiV2DataType.EnhancedTag => "enhanced_tag",
+                ExtApiV2DataType.Meal => "meal",
+                ExtApiV2DataType.RestModePeriod => "rest_mode_period",
+                ExtApiV2DataType.RingConfiguration => "ring_configuration",
+                ExtApiV2DataType.Session => "session",
+                ExtApiV2DataType.Sleep => "sleep",
+                ExtApiV2DataType.SleepTime => "sleep_time",
+                ExtApiV2DataType.Tag => "tag",
+                ExtApiV2DataType.Vo2Max => "vo2_max",
+                ExtApiV2DataType.Workout => "workout",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static ExtApiV2DataType? ToEnum(string value)
+        {
+            return value switch
+            {
+                "daily_activity" => ExtApiV2DataType.DailyActivity,
+                "daily_cardiovascular_age" => ExtApiV2DataType.DailyCardiovascularAge,
+                "daily_readiness" => ExtApiV2DataType.DailyReadiness,
+                "daily_resilience" => ExtApiV2DataType.DailyResilience,
+                "daily_sleep" => ExtApiV2DataType.DailySleep,
+                "daily_spo2" => ExtApiV2DataType.DailySpo2,
+                "daily_stress" => ExtApiV2DataType.DailyStress,
+                "enhanced_tag" => ExtApiV2DataType.EnhancedTag,
+                "meal" => ExtApiV2DataType.Meal,
+                "rest_mode_period" => ExtApiV2DataType.RestModePeriod,
+                "ring_configuration" => ExtApiV2DataType.RingConfiguration,
+                "session" => ExtApiV2DataType.Session,
+                "sleep" => ExtApiV2DataType.Sleep,
+                "sleep_time" => ExtApiV2DataType.SleepTime,
+                "tag" => ExtApiV2DataType.Tag,
+                "vo2_max" => ExtApiV2DataType.Vo2Max,
+                "workout" => ExtApiV2DataType.Workout,
+                _ => null,
+            };
+        }
+    }
+}
