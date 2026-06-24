@@ -7,7 +7,7 @@
 namespace Oura
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
@@ -83,77 +83,77 @@ namespace Oura
 
             typeof(global::Oura.JsonConverters.AnyOfJsonConverter<string, int?>),
 
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseTagModel, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseTagModel, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseEnhancedTagModel, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseEnhancedTagModel, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicWorkout, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicWorkout, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicSession, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicSession, global::Oura.MultiDocumentResponseDict>),
-
             typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyActivity, global::Oura.MultiDocumentResponseDict>),
 
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyActivity, global::Oura.MultiDocumentResponseDict>),
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyCardiovascularAge, global::Oura.MultiDocumentResponseDict>),
 
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailySleep, global::Oura.MultiDocumentResponseDict>),
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyReadiness, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseDailyResilienceModel, global::Oura.MultiDocumentResponseDict>),
 
             typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailySleep, global::Oura.MultiDocumentResponseDict>),
 
             typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailySpO2, global::Oura.MultiDocumentResponseDict>),
 
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyStress, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseEnhancedTagModel, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.TimeSeriesResponsePublicHeartRateRow, global::Oura.TimeSeriesResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicRestModePeriod, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.TimeSeriesResponsePublicRingBatteryLevelRow, global::Oura.TimeSeriesResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicRingConfiguration, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicSession, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicModifiedSleepModel, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicSleepTime, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseTagModel, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicVO2Max, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicWorkout, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyActivity, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyCardiovascularAge, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyReadiness, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseDailyResilienceModel, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailySleep, global::Oura.MultiDocumentResponseDict>),
+
             typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailySpO2, global::Oura.MultiDocumentResponseDict>),
 
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyReadiness, global::Oura.MultiDocumentResponseDict>),
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyStress, global::Oura.MultiDocumentResponseDict>),
 
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyReadiness, global::Oura.MultiDocumentResponseDict>),
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseEnhancedTagModel, global::Oura.MultiDocumentResponseDict>),
 
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicModifiedSleepModel, global::Oura.MultiDocumentResponseDict>),
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.TimeSeriesResponsePublicHeartRateRow, global::Oura.TimeSeriesResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicRestModePeriod, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.TimeSeriesResponsePublicRingBatteryLevelRow, global::Oura.TimeSeriesResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicRingConfiguration, global::Oura.MultiDocumentResponseDict>),
+
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicSession, global::Oura.MultiDocumentResponseDict>),
 
             typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicModifiedSleepModel, global::Oura.MultiDocumentResponseDict>),
 
             typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicSleepTime, global::Oura.MultiDocumentResponseDict>),
 
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicSleepTime, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicRestModePeriod, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicRestModePeriod, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicRingConfiguration, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicRingConfiguration, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyStress, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyStress, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseDailyResilienceModel, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseDailyResilienceModel, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyCardiovascularAge, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicDailyCardiovascularAge, global::Oura.MultiDocumentResponseDict>),
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponseTagModel, global::Oura.MultiDocumentResponseDict>),
 
             typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicVO2Max, global::Oura.MultiDocumentResponseDict>),
 
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicVO2Max, global::Oura.MultiDocumentResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.TimeSeriesResponsePublicHeartRateRow, global::Oura.TimeSeriesResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.TimeSeriesResponsePublicHeartRateRow, global::Oura.TimeSeriesResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.TimeSeriesResponsePublicRingBatteryLevelRow, global::Oura.TimeSeriesResponseDict>),
-
-            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.TimeSeriesResponsePublicRingBatteryLevelRow, global::Oura.TimeSeriesResponseDict>),
+            typeof(global::Oura.JsonConverters.AnyOfJsonConverter<global::Oura.MultiDocumentResponsePublicWorkout, global::Oura.MultiDocumentResponseDict>),
 
             typeof(global::Oura.JsonConverters.UnixTimestampJsonConverter),
         })]
@@ -260,25 +260,25 @@ namespace Oura
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Oura.AnyOf<string, int?>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<string, int?>), TypeInfoPropertyName = "AnyOfStringInt322")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.WebhookSubscriptionModel))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponseTagModel, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponseTagModelMultiDocumentResponseDict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponseEnhancedTagModel, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponseEnhancedTagModelMultiDocumentResponseDict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicWorkout, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicWorkoutMultiDocumentResponseDict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicSession, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicSessionMultiDocumentResponseDict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyActivity, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicDailyActivityMultiDocumentResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyCardiovascularAge, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicDailyCardiovascularAgeMultiDocumentResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyReadiness, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicDailyReadinessMultiDocumentResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponseDailyResilienceModel, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponseDailyResilienceModelMultiDocumentResponseDict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailySleep, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicDailySleepMultiDocumentResponseDict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailySpO2, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicDailySpO2MultiDocumentResponseDict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyReadiness, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicDailyReadinessMultiDocumentResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyStress, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicDailyStressMultiDocumentResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponseEnhancedTagModel, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponseEnhancedTagModelMultiDocumentResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.TimeSeriesResponsePublicHeartRateRow, global::Oura.TimeSeriesResponseDict>), TypeInfoPropertyName = "AnyOfTimeSeriesResponsePublicHeartRateRowTimeSeriesResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicRestModePeriod, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicRestModePeriodMultiDocumentResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.TimeSeriesResponsePublicRingBatteryLevelRow, global::Oura.TimeSeriesResponseDict>), TypeInfoPropertyName = "AnyOfTimeSeriesResponsePublicRingBatteryLevelRowTimeSeriesResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicRingConfiguration, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicRingConfigurationMultiDocumentResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicSession, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicSessionMultiDocumentResponseDict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicModifiedSleepModel, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicModifiedSleepModelMultiDocumentResponseDict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicSleepTime, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicSleepTimeMultiDocumentResponseDict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicRestModePeriod, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicRestModePeriodMultiDocumentResponseDict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicRingConfiguration, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicRingConfigurationMultiDocumentResponseDict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyStress, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicDailyStressMultiDocumentResponseDict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponseDailyResilienceModel, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponseDailyResilienceModelMultiDocumentResponseDict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyCardiovascularAge, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicDailyCardiovascularAgeMultiDocumentResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponseTagModel, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponseTagModelMultiDocumentResponseDict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicVO2Max, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicVO2MaxMultiDocumentResponseDict2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicWorkout, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicWorkoutMultiDocumentResponseDict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Oura.WebhookSubscriptionModel>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.TimeSeriesResponsePublicHeartRateRow, global::Oura.TimeSeriesResponseDict>), TypeInfoPropertyName = "AnyOfTimeSeriesResponsePublicHeartRateRowTimeSeriesResponseDict2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.TimeSeriesResponsePublicRingBatteryLevelRow, global::Oura.TimeSeriesResponseDict>), TypeInfoPropertyName = "AnyOfTimeSeriesResponsePublicRingBatteryLevelRowTimeSeriesResponseDict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Oura.ValidationError>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>))]

@@ -9,25 +9,29 @@ namespace Oura
     public enum PublicRingHardwareType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gen1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gen2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gen2m,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gen3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gen4,
+        /// <summary>
+        ///
+        /// </summary>
+        Or5,
     }
 
     /// <summary>
@@ -47,6 +51,7 @@ namespace Oura
                 PublicRingHardwareType.Gen2m => "gen2m",
                 PublicRingHardwareType.Gen3 => "gen3",
                 PublicRingHardwareType.Gen4 => "gen4",
+                PublicRingHardwareType.Or5 => "or5",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -62,6 +67,7 @@ namespace Oura
                 "gen2m" => PublicRingHardwareType.Gen2m,
                 "gen3" => PublicRingHardwareType.Gen3,
                 "gen4" => PublicRingHardwareType.Gen4,
+                "or5" => PublicRingHardwareType.Or5,
                 _ => null,
             };
         }

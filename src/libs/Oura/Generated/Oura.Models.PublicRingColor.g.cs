@@ -9,63 +9,67 @@ namespace Oura
     public enum PublicRingColor
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrushedSilver,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cloud,
         /// <summary>
-        /// 
+        ///
+        /// </summary>
+        DeepRose,
+        /// <summary>
+        ///
         /// </summary>
         GlossyBlack,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlossyGold,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlossyWhite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gucci,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MattGold,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Midnight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Petal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rose,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Silver,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StealthBlack,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tide,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Titanium,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TitaniumAndGold,
     }
@@ -84,6 +88,7 @@ namespace Oura
             {
                 PublicRingColor.BrushedSilver => "brushed_silver",
                 PublicRingColor.Cloud => "cloud",
+                PublicRingColor.DeepRose => "deep_rose",
                 PublicRingColor.GlossyBlack => "glossy_black",
                 PublicRingColor.GlossyGold => "glossy_gold",
                 PublicRingColor.GlossyWhite => "glossy_white",
@@ -109,6 +114,7 @@ namespace Oura
             {
                 "brushed_silver" => PublicRingColor.BrushedSilver,
                 "cloud" => PublicRingColor.Cloud,
+                "deep_rose" => PublicRingColor.DeepRose,
                 "glossy_black" => PublicRingColor.GlossyBlack,
                 "glossy_gold" => PublicRingColor.GlossyGold,
                 "glossy_white" => PublicRingColor.GlossyWhite,

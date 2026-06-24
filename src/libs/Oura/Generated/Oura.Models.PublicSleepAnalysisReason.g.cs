@@ -9,11 +9,19 @@ namespace Oura
     public enum PublicSleepAnalysisReason
     {
         /// <summary>
-        /// 
+        ///
+        /// </summary>
+        BackgroundCreatedForegroundUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        BackgroundSleepAnalysis,
+        /// <summary>
+        ///
         /// </summary>
         BedtimeEdit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ForegroundSleepAnalysis,
     }
@@ -30,6 +38,8 @@ namespace Oura
         {
             return value switch
             {
+                PublicSleepAnalysisReason.BackgroundCreatedForegroundUpdated => "background_created_foreground_updated",
+                PublicSleepAnalysisReason.BackgroundSleepAnalysis => "background_sleep_analysis",
                 PublicSleepAnalysisReason.BedtimeEdit => "bedtime_edit",
                 PublicSleepAnalysisReason.ForegroundSleepAnalysis => "foreground_sleep_analysis",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -42,6 +52,8 @@ namespace Oura
         {
             return value switch
             {
+                "background_created_foreground_updated" => PublicSleepAnalysisReason.BackgroundCreatedForegroundUpdated,
+                "background_sleep_analysis" => PublicSleepAnalysisReason.BackgroundSleepAnalysis,
                 "bedtime_edit" => PublicSleepAnalysisReason.BedtimeEdit,
                 "foreground_sleep_analysis" => PublicSleepAnalysisReason.ForegroundSleepAnalysis,
                 _ => null,

@@ -17,7 +17,7 @@ install_autosdk_cli
 
 spec_tmp="$(mktemp openapi.json.XXXXXX)"
 trap 'rm -f "$spec_tmp"' EXIT
-fetch_spec -o "$spec_tmp" https://cloud.ouraring.com/v2/static/json/openapi-1.34.json
+fetch_spec -o "$spec_tmp" https://cloud.ouraring.com/v2/static/json/openapi-1.35.json
 mv "$spec_tmp" openapi.json
 trap - EXIT
 
@@ -93,3 +93,5 @@ autosdk generate openapi.json \
   --output Generated \
   --security-scheme Http:Header:Bearer \
   --exclude-deprecated-operations
+
+find Generated -type f -name '*.g.cs' -exec perl -pi -e 's/[ \t]+$//' {} +
