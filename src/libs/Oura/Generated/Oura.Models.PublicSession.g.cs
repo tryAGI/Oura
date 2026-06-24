@@ -16,14 +16,14 @@ namespace Oura
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("day")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Day { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_datetime")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -55,7 +55,7 @@ namespace Oura
         public global::Oura.PublicSample? MotionCount { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start_datetime")]
         [global::System.Text.Json.Serialization.JsonRequired]

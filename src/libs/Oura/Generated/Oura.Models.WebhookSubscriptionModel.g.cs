@@ -4,26 +4,26 @@
 namespace Oura
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class WebhookSubscriptionModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("callback_url")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CallbackUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("event_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Oura.JsonConverters.WebhookOperationJsonConverter))]
@@ -31,7 +31,7 @@ namespace Oura
         public required global::Oura.WebhookOperation EventType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Oura.JsonConverters.ExtApiV2DataTypeJsonConverter))]
@@ -39,7 +39,7 @@ namespace Oura
         public required global::Oura.ExtApiV2DataType DataType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expiration_time")]
         [global::System.Text.Json.Serialization.JsonRequired]

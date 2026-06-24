@@ -4,7 +4,7 @@
 namespace Oura
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class MultiDocumentResponseDictDataItem
     {

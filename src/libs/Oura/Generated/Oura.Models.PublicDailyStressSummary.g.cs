@@ -9,15 +9,15 @@ namespace Oura
     public enum PublicDailyStressSummary
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Normal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Restored,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stressful,
     }

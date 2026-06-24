@@ -4,12 +4,12 @@
 namespace Oura
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DailyResilienceModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -23,7 +23,7 @@ namespace Oura
         public required global::System.DateTime Day { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contributors")]
         [global::System.Text.Json.Serialization.JsonRequired]

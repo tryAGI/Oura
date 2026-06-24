@@ -20,7 +20,7 @@ namespace Oura.JsonConverters
                     {
                         return global::Oura.PublicSleepTimeStatusExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

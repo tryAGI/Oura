@@ -95,7 +95,7 @@ namespace Oura
         /// <inheritdoc/>
         public global::Oura.AutoSDKClientOptions Options { get; }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; } = global::Oura.SourceGenerationContext.Default;
 
@@ -201,7 +201,7 @@ namespace Oura
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RingBatteryLevelRoutesClient RingBatteryLevelRoutes => new RingBatteryLevelRoutesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

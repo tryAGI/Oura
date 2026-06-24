@@ -9,23 +9,23 @@ namespace Oura
     public enum PublicSleepTimeStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BadSleepQuality,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotEnoughNights,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotEnoughRecentNights,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OnlyRecommendedFound,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OptimalFound,
     }

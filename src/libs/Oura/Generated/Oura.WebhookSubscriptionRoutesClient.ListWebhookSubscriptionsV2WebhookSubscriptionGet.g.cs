@@ -130,7 +130,7 @@ namespace Oura
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Oura.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

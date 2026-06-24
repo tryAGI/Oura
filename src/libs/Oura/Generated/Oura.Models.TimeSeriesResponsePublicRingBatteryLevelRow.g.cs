@@ -4,19 +4,19 @@
 namespace Oura
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TimeSeriesResponsePublicRingBatteryLevelRow
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Oura.PublicRingBatteryLevelRow> Data { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("next_token")]
         public string? NextToken { get; set; }

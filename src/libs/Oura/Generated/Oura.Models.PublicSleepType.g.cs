@@ -14,23 +14,23 @@ namespace Oura
     public enum PublicSleepType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LateNap,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LongSleep,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sleep,
     }

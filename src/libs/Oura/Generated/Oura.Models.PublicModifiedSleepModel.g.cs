@@ -4,7 +4,7 @@
 namespace Oura
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PublicModifiedSleepModel
     {
@@ -40,21 +40,21 @@ namespace Oura
         public int? AwakeTime { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bedtime_end")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BedtimeEnd { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bedtime_start")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BedtimeStart { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("day")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -228,7 +228,7 @@ namespace Oura
         ///         '4' = awake.<br/>
         ///         Example: "444423323441114".<br/>
         ///         NOTE: This field will be removed in the future after a transition period.<br/>
-        ///         
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app_sleep_phase_5_min")]
         public string? AppSleepPhase5Min { get; set; }
@@ -353,7 +353,7 @@ namespace Oura
         ///         '4' = awake.<br/>
         ///         Example: "444423323441114".<br/>
         ///         NOTE: This field will be removed in the future after a transition period.<br/>
-        ///         
+        ///
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

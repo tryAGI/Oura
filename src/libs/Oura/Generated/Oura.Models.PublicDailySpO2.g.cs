@@ -22,7 +22,7 @@ namespace Oura
         public int? BreathingDisturbanceIndex { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("day")]
         [global::System.Text.Json.Serialization.JsonRequired]

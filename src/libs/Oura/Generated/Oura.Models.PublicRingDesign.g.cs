@@ -9,23 +9,23 @@ namespace Oura
     public enum PublicRingDesign
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Balance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BalanceDiamond,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ceramic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Heritage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Horizon,
     }

@@ -29,7 +29,7 @@ namespace Oura
         public double? Calories { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("day")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -42,7 +42,7 @@ namespace Oura
         public double? Distance { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_datetime")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -71,7 +71,7 @@ namespace Oura
         public required global::Oura.PublicWorkoutSource Source { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start_datetime")]
         [global::System.Text.Json.Serialization.JsonRequired]

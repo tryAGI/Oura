@@ -11,11 +11,11 @@ namespace Oura
     public enum PublicSleepAlgorithmVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V2,
     }

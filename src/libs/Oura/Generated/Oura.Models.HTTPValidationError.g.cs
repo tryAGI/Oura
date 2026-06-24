@@ -4,12 +4,12 @@
 namespace Oura
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class HTTPValidationError
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("detail")]
         public global::System.Collections.Generic.IList<global::Oura.ValidationError>? Detail { get; set; }

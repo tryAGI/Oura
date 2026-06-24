@@ -20,7 +20,7 @@ namespace Oura.JsonConverters
                     {
                         return global::Oura.ExtApiV2DataTypeExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

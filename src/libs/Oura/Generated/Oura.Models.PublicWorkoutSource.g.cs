@@ -9,19 +9,19 @@ namespace Oura
     public enum PublicWorkoutSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Autodetected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Confirmed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manual,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkoutHeartRate,
     }

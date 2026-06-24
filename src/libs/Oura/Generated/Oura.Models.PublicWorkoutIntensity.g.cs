@@ -9,15 +9,15 @@ namespace Oura
     public enum PublicWorkoutIntensity
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Easy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Moderate,
     }

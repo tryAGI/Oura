@@ -9,23 +9,23 @@ namespace Oura
     public enum PublicMomentMood
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bad,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Good,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Great,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Same,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Worse,
     }

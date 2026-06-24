@@ -20,7 +20,7 @@ namespace Oura.JsonConverters
                     {
                         return global::Oura.WebhookOperationExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

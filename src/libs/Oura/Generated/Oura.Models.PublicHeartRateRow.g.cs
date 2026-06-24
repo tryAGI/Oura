@@ -9,7 +9,7 @@ namespace Oura
     public sealed partial class PublicHeartRateRow
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
         [global::System.Text.Json.Serialization.JsonRequired]

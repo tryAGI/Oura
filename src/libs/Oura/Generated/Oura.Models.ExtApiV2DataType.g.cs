@@ -4,76 +4,76 @@
 namespace Oura
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ExtApiV2DataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DailyActivity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DailyCardiovascularAge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DailyReadiness,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DailyResilience,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DailySleep,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DailySpo2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DailyStress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnhancedTag,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Meal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RestModePeriod,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RingConfiguration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Session,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sleep,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SleepTime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tag,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vo2Max,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workout,
     }

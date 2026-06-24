@@ -100,7 +100,7 @@ namespace Oura
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
@@ -162,7 +162,7 @@ namespace Oura
         public RestModePeriodRoutesClient RestModePeriodRoutes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RingBatteryLevelRoutesClient RingBatteryLevelRoutes { get; }
 

@@ -9,23 +9,23 @@ namespace Oura
     public enum LongTermResilienceLevel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Adequate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Exceptional,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Limited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Solid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Strong,
     }

@@ -4,20 +4,20 @@
 namespace Oura
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WebhookOperation
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Create,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Update,
     }

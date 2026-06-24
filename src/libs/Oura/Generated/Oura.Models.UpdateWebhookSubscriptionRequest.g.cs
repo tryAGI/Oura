@@ -4,32 +4,32 @@
 namespace Oura
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateWebhookSubscriptionRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("verification_token")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VerificationToken { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("callback_url")]
         public string? CallbackUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("event_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Oura.JsonConverters.WebhookOperationJsonConverter))]
         public global::Oura.WebhookOperation? EventType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Oura.JsonConverters.ExtApiV2DataTypeJsonConverter))]

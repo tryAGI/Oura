@@ -9,27 +9,27 @@ namespace Oura
     public enum PublicHeartRateSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Awake,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Live,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Session,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sleep,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workout,
     }

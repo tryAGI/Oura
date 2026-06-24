@@ -9,27 +9,27 @@ namespace Oura
     public enum PublicSleepTimeRecommendation
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EarlierBedtime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EarlierWakeUpTime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FollowOptimalBedtime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImproveEfficiency,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LaterBedtime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LaterWakeUpTime,
     }

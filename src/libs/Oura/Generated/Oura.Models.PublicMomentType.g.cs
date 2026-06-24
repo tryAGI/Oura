@@ -9,27 +9,27 @@ namespace Oura
     public enum PublicMomentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BodyStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Breathing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Meditation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nap,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Relaxation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rest,
     }

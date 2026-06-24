@@ -35,7 +35,7 @@ namespace Oura
         public required global::System.Collections.Generic.IList<global::Oura.PublicRestModeEpisode> Episodes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start_day")]
         [global::System.Text.Json.Serialization.JsonRequired]
