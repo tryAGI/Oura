@@ -158,7 +158,7 @@ namespace Oura
             typeof(global::Oura.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.JsonSerializerContextTypes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<double>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<double?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.CreateWebhookSubscriptionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
@@ -279,7 +279,7 @@ namespace Oura
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicVO2Max, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicVO2MaxMultiDocumentResponseDict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicWorkout, global::Oura.MultiDocumentResponseDict>), TypeInfoPropertyName = "AnyOfMultiDocumentResponsePublicWorkoutMultiDocumentResponseDict2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Oura.WebhookSubscriptionModel>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Oura.ValidationError>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Oura.DailyResilienceModel>))]

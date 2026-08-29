@@ -21,6 +21,11 @@ namespace Oura
         public global::System.Collections.Generic.Dictionary<string, object>? StringObjectDictionary { get; set; }
 
         /// <summary>
+        /// Runtime object lists used by dynamic JSON payloads such as tool arguments.
+        /// </summary>
+        public global::System.Collections.Generic.List<object>? ObjectList { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         public global::System.Text.Json.JsonElement? JsonElement { get; set; }
@@ -28,7 +33,7 @@ namespace Oura
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<double>? Type0 { get; set; }
+        public global::System.Collections.Generic.IList<double?>? Type0 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -513,7 +518,7 @@ namespace Oura
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<double>? ListType0 { get; set; }
+        public global::System.Collections.Generic.List<double?>? ListType0 { get; set; }
         /// <summary>
         ///
         /// </summary>
