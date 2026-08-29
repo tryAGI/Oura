@@ -20,7 +20,7 @@ namespace Oura
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("items")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<double> Items { get; set; }
+        public required global::System.Collections.Generic.IList<double?> Items { get; set; }
 
         /// <summary>
         ///
@@ -48,7 +48,7 @@ namespace Oura
 #endif
         public PublicSample(
             double interval,
-            global::System.Collections.Generic.IList<double> items,
+            global::System.Collections.Generic.IList<double?> items,
             string timestamp)
         {
             this.Interval = interval;
