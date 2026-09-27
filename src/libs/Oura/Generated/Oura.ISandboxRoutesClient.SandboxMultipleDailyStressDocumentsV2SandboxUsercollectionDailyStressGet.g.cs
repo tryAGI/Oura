@@ -14,7 +14,7 @@ namespace Oura
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
-        /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/daily_stress?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=day,score' \<br/>
+        /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/daily_stress?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=day,day_summary' \<br/>
         /// --header 'Authorization: Bearer &lt;token&gt;'
         /// </remarks>
         global::System.Threading.Tasks.Task<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyStress, global::Oura.MultiDocumentResponseDict>> SandboxMultipleDailyStressDocumentsV2SandboxUsercollectionDailyStressGetAsync(
@@ -33,7 +33,7 @@ namespace Oura
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
-        /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/daily_stress?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=day,score' \<br/>
+        /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/daily_stress?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=day,day_summary' \<br/>
         /// --header 'Authorization: Bearer &lt;token&gt;'
         /// </remarks>
         global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyStress, global::Oura.MultiDocumentResponseDict>>> SandboxMultipleDailyStressDocumentsV2SandboxUsercollectionDailyStressGetAsResponseAsync(

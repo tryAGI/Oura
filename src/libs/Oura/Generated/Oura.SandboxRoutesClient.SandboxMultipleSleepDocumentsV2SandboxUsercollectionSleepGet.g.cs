@@ -55,7 +55,7 @@ namespace Oura
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
-        /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/sleep?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=day,score' \<br/>
+        /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/sleep?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=average_breath,average_heart_rate' \<br/>
         /// --header 'Authorization: Bearer &lt;token&gt;'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicModifiedSleepModel, global::Oura.MultiDocumentResponseDict>> SandboxMultipleSleepDocumentsV2SandboxUsercollectionSleepGetAsync(
@@ -85,7 +85,7 @@ namespace Oura
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
-        /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/sleep?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=day,score' \<br/>
+        /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/sleep?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=average_breath,average_heart_rate' \<br/>
         /// --header 'Authorization: Bearer &lt;token&gt;'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicModifiedSleepModel, global::Oura.MultiDocumentResponseDict>>> SandboxMultipleSleepDocumentsV2SandboxUsercollectionSleepGetAsResponseAsync(

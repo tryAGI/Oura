@@ -26,6 +26,7 @@ namespace Oura
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.HTTPValidationError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Oura.ValidationError>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.ValidationError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Oura.UpdateWebhookSubscriptionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Oura.AnyOf<string, int?>>))]

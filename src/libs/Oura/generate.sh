@@ -16,9 +16,27 @@ fetch_spec() {
 install_autosdk_cli
 
 spec_tmp="$(mktemp openapi.json.XXXXXX)"
-trap 'rm -f "$spec_tmp"' EXIT
-fetch_spec -o "$spec_tmp" https://cloud.ouraring.com/v2/static/json/openapi-1.35.json
+docs_tmp="$(mktemp oura-docs.XXXXXX)"
+trap 'rm -f "$spec_tmp" "$docs_tmp"' EXIT
+fetch_spec -o "$docs_tmp" https://cloud.ouraring.com/v2/docs
+spec_path="$(python3 - "$docs_tmp" <<'PY'
+from pathlib import Path
+import re
+import sys
+
+page = Path(sys.argv[1]).read_text(encoding="utf-8")
+matches = re.findall(
+    r'<redoc\b[^>]*\bspec-url="(/v2/static/json/openapi-[0-9]+(?:\.[0-9]+)*\.json)"',
+    page,
+)
+if len(matches) != 1:
+    raise SystemExit("error: expected one versioned OpenAPI URL in Oura's API docs")
+print(matches[0])
+PY
+)"
+fetch_spec -o "$spec_tmp" "https://cloud.ouraring.com$spec_path"
 mv "$spec_tmp" openapi.json
+rm -f "$docs_tmp"
 trap - EXIT
 
 rm -rf Generated

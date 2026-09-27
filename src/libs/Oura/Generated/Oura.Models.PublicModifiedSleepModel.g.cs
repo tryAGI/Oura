@@ -214,7 +214,7 @@ namespace Oura
         public global::Oura.PublicSleepType? Type { get; set; }
 
         /// <summary>
-        /// Encrypted identifier of the ring that produced this sleep data.
+        /// Encrypted identifier of the ring that produced this sleep data. Deprecated, returns null.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ring_id")]
         public string? RingId { get; set; }
@@ -342,7 +342,7 @@ namespace Oura
         /// Type of the sleep period.
         /// </param>
         /// <param name="ringId">
-        /// Encrypted identifier of the ring that produced this sleep data.
+        /// Encrypted identifier of the ring that produced this sleep data. Deprecated, returns null.
         /// </param>
         /// <param name="appSleepPhase5Min">
         ///         5-minute sleep phase classification for the period aligned with what is shown in the app<br/>

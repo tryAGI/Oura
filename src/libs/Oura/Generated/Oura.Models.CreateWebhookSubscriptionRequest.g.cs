@@ -31,7 +31,7 @@ namespace Oura
         public required global::Oura.WebhookOperation EventType { get; set; }
 
         /// <summary>
-        ///
+        /// Data types that partners can subscribe to via ExtApiV2 webhooks.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Oura.JsonConverters.ExtApiV2DataTypeJsonConverter))]
@@ -50,7 +50,9 @@ namespace Oura
         /// <param name="callbackUrl"></param>
         /// <param name="verificationToken"></param>
         /// <param name="eventType"></param>
-        /// <param name="dataType"></param>
+        /// <param name="dataType">
+        /// Data types that partners can subscribe to via ExtApiV2 webhooks.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

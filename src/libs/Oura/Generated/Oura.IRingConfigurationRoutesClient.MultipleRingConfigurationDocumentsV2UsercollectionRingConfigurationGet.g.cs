@@ -15,7 +15,7 @@ namespace Oura
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
-        /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/ring_configuration?fields=day,score' \<br/>
+        /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/ring_configuration?fields=color,design' \<br/>
         /// --header 'Authorization: Bearer &lt;token&gt;'
         /// </remarks>
         global::System.Threading.Tasks.Task<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicRingConfiguration, global::Oura.MultiDocumentResponseDict>> MultipleRingConfigurationDocumentsV2UsercollectionRingConfigurationGetAsync(
@@ -34,7 +34,7 @@ namespace Oura
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
-        /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/ring_configuration?fields=day,score' \<br/>
+        /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/ring_configuration?fields=color,design' \<br/>
         /// --header 'Authorization: Bearer &lt;token&gt;'
         /// </remarks>
         global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicRingConfiguration, global::Oura.MultiDocumentResponseDict>>> MultipleRingConfigurationDocumentsV2UsercollectionRingConfigurationGetAsResponseAsync(

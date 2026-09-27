@@ -4,7 +4,7 @@
 namespace Oura
 {
     /// <summary>
-    ///
+    /// Data types that partners can subscribe to via ExtApiV2 webhooks.
     /// </summary>
     public enum ExtApiV2DataType
     {

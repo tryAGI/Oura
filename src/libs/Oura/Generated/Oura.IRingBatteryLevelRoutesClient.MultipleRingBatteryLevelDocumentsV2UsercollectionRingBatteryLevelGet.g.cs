@@ -21,7 +21,7 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// # The '+' symbol in the timezone must be escaped to `%2B` if included. <br/>
-        /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/ring_battery_level?start_datetime=2021-11-01T00:00:00-08:00&amp;end_datetime=2021-12-01T00:00:00-08:00&amp;fields=timestamp,bpm' \ <br/>
+        /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/ring_battery_level?start_datetime=2021-11-01T00:00:00-08:00&amp;end_datetime=2021-12-01T00:00:00-08:00&amp;fields=timestamp,timestamp_unix' \ <br/>
         /// --header 'Authorization: Bearer &lt;token&gt;'
         /// </remarks>
         global::System.Threading.Tasks.Task<global::Oura.AnyOf<global::Oura.TimeSeriesResponsePublicRingBatteryLevelRow, global::Oura.TimeSeriesResponseDict>> MultipleRingBatteryLevelDocumentsV2UsercollectionRingBatteryLevelGetAsync(
@@ -49,7 +49,7 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// # The '+' symbol in the timezone must be escaped to `%2B` if included. <br/>
-        /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/ring_battery_level?start_datetime=2021-11-01T00:00:00-08:00&amp;end_datetime=2021-12-01T00:00:00-08:00&amp;fields=timestamp,bpm' \ <br/>
+        /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/ring_battery_level?start_datetime=2021-11-01T00:00:00-08:00&amp;end_datetime=2021-12-01T00:00:00-08:00&amp;fields=timestamp,timestamp_unix' \ <br/>
         /// --header 'Authorization: Bearer &lt;token&gt;'
         /// </remarks>
         global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::Oura.AnyOf<global::Oura.TimeSeriesResponsePublicRingBatteryLevelRow, global::Oura.TimeSeriesResponseDict>>> MultipleRingBatteryLevelDocumentsV2UsercollectionRingBatteryLevelGetAsResponseAsync(

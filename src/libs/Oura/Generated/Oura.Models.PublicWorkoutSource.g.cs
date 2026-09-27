@@ -19,6 +19,14 @@ namespace Oura
         /// <summary>
         ///
         /// </summary>
+        LiveOuraHeartRate,
+        /// <summary>
+        ///
+        /// </summary>
+        LiveThirdPartyHeartRate,
+        /// <summary>
+        ///
+        /// </summary>
         Manual,
         /// <summary>
         ///
@@ -40,6 +48,8 @@ namespace Oura
             {
                 PublicWorkoutSource.Autodetected => "autodetected",
                 PublicWorkoutSource.Confirmed => "confirmed",
+                PublicWorkoutSource.LiveOuraHeartRate => "live_oura_heart_rate",
+                PublicWorkoutSource.LiveThirdPartyHeartRate => "live_third_party_heart_rate",
                 PublicWorkoutSource.Manual => "manual",
                 PublicWorkoutSource.WorkoutHeartRate => "workout_heart_rate",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -54,6 +64,8 @@ namespace Oura
             {
                 "autodetected" => PublicWorkoutSource.Autodetected,
                 "confirmed" => PublicWorkoutSource.Confirmed,
+                "live_oura_heart_rate" => PublicWorkoutSource.LiveOuraHeartRate,
+                "live_third_party_heart_rate" => PublicWorkoutSource.LiveThirdPartyHeartRate,
                 "manual" => PublicWorkoutSource.Manual,
                 "workout_heart_rate" => PublicWorkoutSource.WorkoutHeartRate,
                 _ => null,

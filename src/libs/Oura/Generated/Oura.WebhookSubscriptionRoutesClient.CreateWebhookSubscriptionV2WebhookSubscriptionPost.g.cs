@@ -490,7 +490,9 @@ namespace Oura
         /// <param name="callbackUrl"></param>
         /// <param name="verificationToken"></param>
         /// <param name="eventType"></param>
-        /// <param name="dataType"></param>
+        /// <param name="dataType">
+        /// Data types that partners can subscribe to via ExtApiV2 webhooks.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
