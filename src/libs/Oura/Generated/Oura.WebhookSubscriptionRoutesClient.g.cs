@@ -88,7 +88,7 @@ namespace Oura
     ///    }<br/>
     ///    ```<br/>
     /// 3. If verification succeeds, your subscription is activated<br/>
-    /// ![Verification Flow](/img/webhook-verification-flow-diagram.drawio.png)<br/>
+    /// ![Verification Flow](/v2/static/img/webhook-verification-flow-diagram.drawio.png)<br/>
     /// ### Step 4: Receiving and Processing Events<br/>
     /// When an event occurs (e.g., user syncs new sleep data):<br/>
     /// 1. Oura sends a POST request to your callback URL:<br/>
