@@ -43,10 +43,6 @@ namespace Oura
         /// <summary>
         ///
         /// </summary>
-        Meal,
-        /// <summary>
-        ///
-        /// </summary>
         RestModePeriod,
         /// <summary>
         ///
@@ -98,7 +94,6 @@ namespace Oura
                 ExtApiV2DataType.DailySpo2 => "daily_spo2",
                 ExtApiV2DataType.DailyStress => "daily_stress",
                 ExtApiV2DataType.EnhancedTag => "enhanced_tag",
-                ExtApiV2DataType.Meal => "meal",
                 ExtApiV2DataType.RestModePeriod => "rest_mode_period",
                 ExtApiV2DataType.RingConfiguration => "ring_configuration",
                 ExtApiV2DataType.Session => "session",
@@ -125,7 +120,6 @@ namespace Oura
                 "daily_spo2" => ExtApiV2DataType.DailySpo2,
                 "daily_stress" => ExtApiV2DataType.DailyStress,
                 "enhanced_tag" => ExtApiV2DataType.EnhancedTag,
-                "meal" => ExtApiV2DataType.Meal,
                 "rest_mode_period" => ExtApiV2DataType.RestModePeriod,
                 "ring_configuration" => ExtApiV2DataType.RingConfiguration,
                 "session" => ExtApiV2DataType.Session,

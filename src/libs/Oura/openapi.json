@@ -8145,8 +8145,7 @@
           "daily_stress",
           "daily_cardiovascular_age",
           "daily_resilience",
-          "vo2_max",
-          "meal"
+          "vo2_max"
         ],
         "title": "ExtApiV2DataType",
         "description": "Data types that partners can subscribe to via ExtApiV2 webhooks."
