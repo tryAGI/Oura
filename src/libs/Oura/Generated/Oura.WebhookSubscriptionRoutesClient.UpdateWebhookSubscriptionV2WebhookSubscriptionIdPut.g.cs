@@ -52,7 +52,7 @@ namespace Oura
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
-        /// curl --location --request PUT 'https://api.ouraring.com/v2/webhook/subscription/5d3fe17b-f880-4d93-b9b6-afbfb76c1e78' --header 'x-client-id: client-id' --header 'x-client-secret: client-secret' --header 'Content-Type: application/json' --data-raw '{<br/>
+        /// curl --location --request PUT 'https://api.ouraring.com/v2/webhook/subscription/5d3fe17b-f880-4d93-b9b6-afbfb76c1e78' --header 'x-client-id: client-id' --header 'x-client-secret: client-secret' --header 'User-Agent: YourAppName/1.0' --header 'Content-Type: application/json' --data-raw '{<br/>
         ///     "callback_url": "https://my-api/oura/tag/delete",<br/>
         ///     "verification_token": "123",<br/>
         ///     "event_type": "delete",<br/>
@@ -85,7 +85,7 @@ namespace Oura
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
-        /// curl --location --request PUT 'https://api.ouraring.com/v2/webhook/subscription/5d3fe17b-f880-4d93-b9b6-afbfb76c1e78' --header 'x-client-id: client-id' --header 'x-client-secret: client-secret' --header 'Content-Type: application/json' --data-raw '{<br/>
+        /// curl --location --request PUT 'https://api.ouraring.com/v2/webhook/subscription/5d3fe17b-f880-4d93-b9b6-afbfb76c1e78' --header 'x-client-id: client-id' --header 'x-client-secret: client-secret' --header 'User-Agent: YourAppName/1.0' --header 'Content-Type: application/json' --data-raw '{<br/>
         ///     "callback_url": "https://my-api/oura/tag/delete",<br/>
         ///     "verification_token": "123",<br/>
         ///     "event_type": "delete",<br/>

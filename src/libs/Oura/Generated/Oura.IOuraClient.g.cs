@@ -15,7 +15,8 @@ namespace Oura
     /// 2. **Make Your First API Call**:<br/>
     ///    ```<br/>
     ///    curl -X GET https://api.ouraring.com/v2/usercollection/personal_info \<br/>
-    ///    -H "Authorization: Bearer YOUR_TOKEN_HERE"<br/>
+    ///    -H "Authorization: Bearer YOUR_TOKEN_HERE" \<br/>
+    ///    -H "User-Agent: YourAppName/1.0"<br/>
     ///    ```<br/>
     /// 3. **Explore Data Types**:<br/>
     ///    - Browse the available endpoints in this documentation to discover what data you can access<br/>
@@ -41,8 +42,11 @@ namespace Oura
     /// GET /v2/usercollection/personal_info HTTP/1.1<br/>
     /// Host: api.ouraring.com<br/>
     /// Authorization: Bearer &lt;token&gt;<br/>
+    /// User-Agent: YourAppName/1.0<br/>
     /// ```<br/>
     /// Please note that personal access tokens were deprecated in December 2025 and are no longer available for use.<br/>
+    /// # User-Agent Header<br/>
+    /// Every request must include a `User-Agent` header that identifies your application, for example `User-Agent: YourAppName/1.0`. Requests without one may be rejected. Not every HTTP library sends a default value, so set it explicitly rather than relying on the default. Browsers set their own `User-Agent` automatically; every other client (server-side code, scripts, native apps) must set it.<br/>
     /// # Oura HTTP Response Codes<br/>
     /// | Response Code                        | Description |<br/>
     /// | ------------------------------------ | - |<br/>

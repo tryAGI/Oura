@@ -47,7 +47,8 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/personal_info' \<br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.PersonalInfoResponse> SinglePersonalInfoDocumentV2UsercollectionPersonalInfoGetAsync(
             global::Oura.AutoSDKRequestOptions? requestOptions = default,
@@ -68,7 +69,8 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/personal_info' \<br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::Oura.PersonalInfoResponse>> SinglePersonalInfoDocumentV2UsercollectionPersonalInfoGetAsResponseAsync(
             global::Oura.AutoSDKRequestOptions? requestOptions = default,

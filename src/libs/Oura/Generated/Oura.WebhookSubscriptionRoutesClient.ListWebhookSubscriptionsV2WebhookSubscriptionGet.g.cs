@@ -46,7 +46,7 @@ namespace Oura
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
-        /// curl --location --request GET 'https://api.ouraring.com/v2/webhook/subscription' --header 'x-client-id: client-id' --header 'x-client-secret: client-secret'
+        /// curl --location --request GET 'https://api.ouraring.com/v2/webhook/subscription' --header 'x-client-id: client-id' --header 'x-client-secret: client-secret' --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Oura.WebhookSubscriptionModel>> ListWebhookSubscriptionsV2WebhookSubscriptionGetAsync(
             global::Oura.AutoSDKRequestOptions? requestOptions = default,
@@ -66,7 +66,7 @@ namespace Oura
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
-        /// curl --location --request GET 'https://api.ouraring.com/v2/webhook/subscription' --header 'x-client-id: client-id' --header 'x-client-secret: client-secret'
+        /// curl --location --request GET 'https://api.ouraring.com/v2/webhook/subscription' --header 'x-client-id: client-id' --header 'x-client-secret: client-secret' --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Oura.WebhookSubscriptionModel>>> ListWebhookSubscriptionsV2WebhookSubscriptionGetAsResponseAsync(
             global::Oura.AutoSDKRequestOptions? requestOptions = default,
