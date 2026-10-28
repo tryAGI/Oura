@@ -57,7 +57,8 @@ namespace Oura
         /// <remarks>
         /// # The '+' symbol in the timezone must be escaped to `%2B` if included. <br/>
         /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/heartrate?start_datetime=2021-11-01T00:00:00-08:00&amp;end_datetime=2021-12-01T00:00:00-08:00&amp;fields=timestamp,bpm' \ <br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AnyOf<global::Oura.TimeSeriesResponsePublicHeartRateRow, global::Oura.TimeSeriesResponseDict>> SandboxMultipleHeartrateDocumentsV2SandboxUsercollectionHeartrateGetAsync(
             global::System.DateTime? startDatetime = default,
@@ -88,7 +89,8 @@ namespace Oura
         /// <remarks>
         /// # The '+' symbol in the timezone must be escaped to `%2B` if included. <br/>
         /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/heartrate?start_datetime=2021-11-01T00:00:00-08:00&amp;end_datetime=2021-12-01T00:00:00-08:00&amp;fields=timestamp,bpm' \ <br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::Oura.AnyOf<global::Oura.TimeSeriesResponsePublicHeartRateRow, global::Oura.TimeSeriesResponseDict>>> SandboxMultipleHeartrateDocumentsV2SandboxUsercollectionHeartrateGetAsResponseAsync(
             global::System.DateTime? startDatetime = default,

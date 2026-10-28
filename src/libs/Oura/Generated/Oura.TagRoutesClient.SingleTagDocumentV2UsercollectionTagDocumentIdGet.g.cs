@@ -50,7 +50,8 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/tag/2-5daccc095220cc5493a4e9c2b681ca941e' \<br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.TagModel> SingleTagDocumentV2UsercollectionTagDocumentIdGetAsync(
             string documentId,
@@ -74,7 +75,8 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/tag/2-5daccc095220cc5493a4e9c2b681ca941e' \<br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::Oura.TagModel>> SingleTagDocumentV2UsercollectionTagDocumentIdGetAsResponseAsync(
             string documentId,

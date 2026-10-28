@@ -56,7 +56,8 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/rest_mode_period?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=end_day,end_time' \<br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicRestModePeriod, global::Oura.MultiDocumentResponseDict>> SandboxMultipleRestModePeriodDocumentsV2SandboxUsercollectionRestModePeriodGetAsync(
             global::System.DateTime? startDate = default,
@@ -86,7 +87,8 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/rest_mode_period?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=end_day,end_time' \<br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicRestModePeriod, global::Oura.MultiDocumentResponseDict>>> SandboxMultipleRestModePeriodDocumentsV2SandboxUsercollectionRestModePeriodGetAsResponseAsync(
             global::System.DateTime? startDate = default,

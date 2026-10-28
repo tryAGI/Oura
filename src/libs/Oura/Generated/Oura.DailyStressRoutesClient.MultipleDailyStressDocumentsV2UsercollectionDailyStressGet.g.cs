@@ -61,7 +61,8 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/daily_stress?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=day,day_summary' \<br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyStress, global::Oura.MultiDocumentResponseDict>> MultipleDailyStressDocumentsV2UsercollectionDailyStressGetAsync(
             global::System.DateTime? startDate = default,
@@ -96,7 +97,8 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// curl --location --request GET 'https://api.ouraring.com/v2/usercollection/daily_stress?start_date=2021-11-01&amp;end_date=2021-12-01&amp;fields=day,day_summary' \<br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         public async global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicDailyStress, global::Oura.MultiDocumentResponseDict>>> MultipleDailyStressDocumentsV2UsercollectionDailyStressGetAsResponseAsync(
             global::System.DateTime? startDate = default,

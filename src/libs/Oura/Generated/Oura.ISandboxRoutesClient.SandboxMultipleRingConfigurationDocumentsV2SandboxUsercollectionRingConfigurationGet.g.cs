@@ -13,7 +13,8 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/ring_configuration?fields=color,design' \<br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         global::System.Threading.Tasks.Task<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicRingConfiguration, global::Oura.MultiDocumentResponseDict>> SandboxMultipleRingConfigurationDocumentsV2SandboxUsercollectionRingConfigurationGetAsync(
             string? nextToken = default,
@@ -28,7 +29,8 @@ namespace Oura
         /// <exception cref="global::Oura.ApiException"></exception>
         /// <remarks>
         /// curl --location --request GET 'https://api.ouraring.com/v2/sandbox/usercollection/ring_configuration?fields=color,design' \<br/>
-        /// --header 'Authorization: Bearer &lt;token&gt;'
+        /// --header 'Authorization: Bearer &lt;token&gt;' \<br/>
+        /// --header 'User-Agent: YourAppName/1.0'
         /// </remarks>
         global::System.Threading.Tasks.Task<global::Oura.AutoSDKHttpResponse<global::Oura.AnyOf<global::Oura.MultiDocumentResponsePublicRingConfiguration, global::Oura.MultiDocumentResponseDict>>> SandboxMultipleRingConfigurationDocumentsV2SandboxUsercollectionRingConfigurationGetAsResponseAsync(
             string? nextToken = default,
